@@ -12,8 +12,8 @@ tamagotchi = {
     },
     "axolopatchi"       : {
         "baseColor":     "light_pink",
-        "eyePosition":   [10,19],
-        "adjustments": 0,
+        "eyePosition":   [10,17],
+        "adjustments": 2,
     },
     "babymarutchi"      : {
         "baseColor":     "yellow",
@@ -22,8 +22,8 @@ tamagotchi = {
     },
     "batatchi"          : {
         "baseColor":     "yellow",
-        "eyePosition":   [6,22],
-        "adjustments": 1,
+        "eyePosition":   [6,21],
+        "adjustments": 2,
     },
     "batchi"            : {
         "baseColor":     "indigo",
@@ -232,7 +232,7 @@ tamagotchi = {
     },
     "lickyoung"         : {
         "baseColor":     "orange",
-        "eyePosition":   [3,7],
+        "eyePosition":   [3,6],
         "adjustments": 0,
     },
     "magmatchi"         : {
@@ -257,13 +257,13 @@ tamagotchi = {
     },
     "mermarintchi"      : {
         "baseColor":     "sky_blue",
-        "eyePosition":   [11,7],
-        "adjustments": 1,
+        "eyePosition":   [11,9],
+        "adjustments": 2,
     },
     "mimitchi"          : {
         "baseColor":     "white",
-        "eyePosition":   [4,27],
-        "adjustments": 1,
+        "eyePosition":   [4,26],
+        "adjustments": 2,
     },
     "molmotchi"         : {
         "baseColor":     "white",
@@ -272,8 +272,8 @@ tamagotchi = {
     },
     "mongatchi"         : {
         "baseColor":     "white",
-        "eyePosition":   [3,12],
-        "adjustments": 1,
+        "eyePosition":   [3,10],
+        "adjustments": 3,
     },
     "nappatchi"         : {
         "baseColor":     "green",
@@ -317,13 +317,13 @@ tamagotchi = {
     },
     "pochitchi"         : {
         "baseColor":     "yellow",
-        "eyePosition":   [10,7],
-        "adjustments": 1,
+        "eyePosition":   [10,6],
+        "adjustments": 2,
     },
     "potsunentchi"      : {
         "baseColor":     "teal",
-        "eyePosition":   [5,27],
-        "adjustments": 1,
+        "eyePosition":   [5,26],
+        "adjustments": 2,
     },
     "ratchi"            : {
         "baseColor":     "light_pink",
@@ -347,8 +347,8 @@ tamagotchi = {
     },
     "sebiretchi"        : {
         "baseColor":     "yellow",
-        "eyePosition":   [6,14],
-        "adjustments": 1,
+        "eyePosition":   [6,13],
+        "adjustments": 2,
     },
     "sharktchi"         : {
         "baseColor":     "gray",
@@ -392,8 +392,8 @@ tamagotchi = {
     },
     "tachutchi"         : {
         "baseColor":     "indigo",
-        "eyePosition":   [1,16],
-        "adjustments": 1,
+        "eyePosition":   [1,14],
+        "adjustments": 3,
     },
     "tanoontchi"        : {
         "baseColor":     "purple",
