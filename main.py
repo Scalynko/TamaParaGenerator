@@ -2,20 +2,24 @@
 from PIL import Image
 import os.path
 import streamlit as st
+import random
 from colors import color
 from tama import tamagotchi
 st.set_page_config(page_title="TamaPara Generator")
 
+if st.button("Randomize"):
+    st.session_state["Tamagotchi"] = random.choice(list(tamagotchi))
+    st.session_state["Color"] = random.choice(list(color))
+    st.session_state["Eyes"] = random.choice(list(tamagotchi))
 
-chosenTama = st.selectbox("Tamagotchi", tamagotchi)
+chosenTama = st.selectbox("Tamagotchi", tamagotchi,key="Tamagotchi")
 image = Image.open("character/" + chosenTama + ".png")
 pixels = image.load()
 
-colorPrompt = st.selectbox("Color", color)
+colorPrompt = st.selectbox("Color", color,key="Color")
 
-eyeType = st.selectbox("Eyes", tamagotchi)
+eyeType = st.selectbox("Eyes", tamagotchi,key="Eyes")
 eyeImage = Image.open("eyes/" + eyeType + ".png")
-
 
 baseColor = tamagotchi[chosenTama]["baseColor"]
 eyePosition = tamagotchi[chosenTama]["eyePosition"]
