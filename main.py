@@ -7,6 +7,8 @@ from colors import color
 from tama import tamagotchi
 st.set_page_config(page_title="TamaPara Generator")
 
+
+
 if st.button("Randomize"):
     st.session_state["Tamagotchi"] = random.choice(list(tamagotchi))
     st.session_state["Color"] = random.choice(list(color))
@@ -40,7 +42,8 @@ if (baseColor != colorPrompt):
                     maxwhite = max(whiteCount)
                     maxwhiteindex = whiteCount.index(maxwhite)
 
-# This is the ugliest way to fix certain tamagotchis turning gray when turning white, I need to learn more about palettes lol
+# This is the ugliest way to fix it, I need to learn more about palettes lol
+
     if (colorPrompt == "white"):
         for i in range(image.size[0]):
                 for j in range(image.size[1]):
@@ -48,6 +51,7 @@ if (baseColor != colorPrompt):
                          pixels[i,j] = color[colorPrompt][1]
                     elif pixels[i,j] == color[colorPrompt][maxwhiteindex+1]:
                          pixels[i,j] = color[colorPrompt][2]
+
 
 # The eyes that have blush effects or eyebrows look weird
 eyePosition = (eyePosition[0],eyePosition[1]+adjustments)
@@ -61,5 +65,16 @@ if os.path.exists("mask/" + chosenTama + ".png"):
     eyeImage = Image.composite(Image.new("RGBA", (40,20)), eyeImage, mask.crop(eyePositionBox))
     
 image.paste(eyeImage, eyePosition, eyeImage)
+
 st.image(image,"",160)
 st.image(image)
+#Initializing so I don't get an error (this image is not shown anyway)
+if "previmages" not in st.session_state:
+    st.session_state["previmages"] = [image]
+st.session_state["previmages"].append(image)
+st.header("Previous Inputs",divider=True)
+if st.button("Clear"):
+    st.session_state["previmages"] = st.session_state["previmages"][:1]
+# Reverse it so it's new first
+for picture in reversed(st.session_state["previmages"][1:]):
+    st.image(picture)
