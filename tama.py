@@ -116,7 +116,7 @@ tamagotchi = {
         "adjustments": 1,
     },
     "glideyoung"        : {
-        "baseColor":     "sky_blue",
+        "baseColor":     "blue",
         "eyePosition":   [7,18],
         "adjustments": 0,
     },
@@ -151,7 +151,7 @@ tamagotchi = {
         "adjustments": 0,
     },
     "irukatchi"         : {
-        "baseColor":     "sky_blue",
+        "baseColor":     "blue",
         "eyePosition":   [8,13],
         "adjustments": 1,
     },
@@ -256,7 +256,7 @@ tamagotchi = {
         "adjustments": 0,
     },
     "mermarintchi"      : {
-        "baseColor":     "sky_blue",
+        "baseColor":     "blue",
         "eyePosition":   [11,9],
         "adjustments": 2,
     },
@@ -436,7 +436,7 @@ tamagotchi = {
         "adjustments": 0,
     },
     "waterkid"          : {
-        "baseColor":     "sky_blue",
+        "baseColor":     "blue",
         "eyePosition":   [0,7],
         "adjustments": 0,
     },
