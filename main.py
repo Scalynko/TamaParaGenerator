@@ -4,23 +4,60 @@ import os.path
 import streamlit as st
 import random
 from colors import color
-from tama import tamagotchi
+from tama import tamagotchi, jadeExclusive, nonBreedableEyes
 st.set_page_config(page_title="TamaPara Generator")
 
+tamagotchiList = eyeList = list(tamagotchi)
+colorList = list(color)
 
 
-if st.button("Randomize"):
-    st.session_state["Tamagotchi"] = random.choice(list(tamagotchi))
-    st.session_state["Color"] = random.choice(list(color))
-    st.session_state["Eyes"] = random.choice(list(tamagotchi))
 
-chosenTama = st.selectbox("Tamagotchi", tamagotchi,key="Tamagotchi")
+#Checkboxes
+colcheck1, colcheck2 = st.columns(2)
+with colcheck1:
+    nonBreedableCheck = st.checkbox("Remove Non-Breedable Eyes") 
+if nonBreedableCheck:
+    eyeList = list(filter(lambda x: x not in nonBreedableEyes, eyeList))
+    
+with colcheck2:
+    jadeCheck = st.checkbox("Remove Jade Forest Exclusives")
+if jadeCheck:
+    tamagotchiList = list(filter(lambda x: x not in jadeExclusive, tamagotchiList))
+    eyeList = list(filter(lambda x: x not in jadeExclusive, eyeList))
+    
+#Randomizers
+colran1, colran2, colran3, colran4 = st.columns(4)
+#Randomize All
+with colran1:
+    randomizeAll = st.button("Randomize All")
+
+if randomizeAll:
+    st.session_state["Tamagotchi"] = random.choice(list(tamagotchiList))
+    st.session_state["Color"] = random.choice(list(colorList))
+    st.session_state["Eyes"] = random.choice(list(eyeList))
+#Randomize Tama  
+with colran2:
+    randomizeTama = st.button("Randomize Tama")
+if randomizeTama:
+    st.session_state["Tamagotchi"] = random.choice(list(tamagotchiList))
+#Randomize Color  
+with colran3:
+    randomizeColor = st.button("Randomize Color")
+if randomizeColor:
+    st.session_state["Color"] = random.choice(list(colorList))
+#Randomize Eyes  
+with colran4:
+    randomizeEyes = st.button("Randomize Eyes")
+if randomizeEyes:
+    st.session_state["Eyes"] = random.choice(list(eyeList))
+
+chosenTama = st.selectbox("Tamagotchi", tamagotchiList,key="Tamagotchi")
 image = Image.open("character/" + chosenTama + ".png")
 pixels = image.load()
 
-colorPrompt = st.selectbox("Color", color,key="Color")
+colorPrompt = st.selectbox("Color", colorList,key="Color")
 
-eyeType = st.selectbox("Eyes", tamagotchi,key="Eyes")
+eyeType = st.selectbox("Eyes", eyeList,key="Eyes")
 eyeImage = Image.open("eyes/" + eyeType + ".png")
 
 baseColor = tamagotchi[chosenTama]["baseColor"]

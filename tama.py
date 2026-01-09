@@ -446,3 +446,6 @@ tamagotchi = {
         "adjustments": 6,
     },
 }
+jadeExclusive = ["forestkid", "forestroaryoung", "forestchirpyoung", "foresttoddleyoung", "forestsproutyoung", "foresthorhotchi", "konkotchi", "tigaotchi", "tanoontchi", "kachitchi", "tokipatchi", "sparrotchi", "lessapantchi", "kanokotchi", "suigyutchi", "panbootchi", "shiitaketchi", "peatchi", "nappatchi", "rushraditchi", "tatsutchi"]
+
+nonBreedableEyes = ["babymarutchi", "landkid", "waterkid", "skykid", "forestkid", "roaryoung", "toddleyoung", "lickyoung", "sproutyoung", "glideyoung", "leapyoung", "paddleyoung", "floatyoung", "flapyoung", "chirpyoung", "bumbleyoung", "rockyyoung", "bbmarutchi","forestchirpyoung", "forestroaryoung","forestsproutyoung","foresttoddleyoung"]
