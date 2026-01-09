@@ -9,15 +9,15 @@ st.set_page_config(page_title="TamaPara Generator")
 
 tamagotchiList = eyeList = list(tamagotchi)
 colorList = list(color)
-
+eyeList = list(filter(lambda x: x not in nonBreedableEyes, eyeList))
 
 
 #Checkboxes
 colcheck1, colcheck2 = st.columns(2)
 with colcheck1:
-    nonBreedableCheck = st.checkbox("Remove Non-Breedable Eyes") 
+    nonBreedableCheck = st.checkbox("Add Non-Breedable Eyes") 
 if nonBreedableCheck:
-    eyeList = list(filter(lambda x: x not in nonBreedableEyes, eyeList))
+    eyeList = sorted(eyeList + nonBreedableEyes)
     
 with colcheck2:
     jadeCheck = st.checkbox("Remove Jade Forest Exclusives")
@@ -26,30 +26,18 @@ if jadeCheck:
     eyeList = list(filter(lambda x: x not in jadeExclusive, eyeList))
     
 #Randomizers
-colran1, colran2, colran3, colran4 = st.columns(4)
-#Randomize All
-with colran1:
-    randomizeAll = st.button("Randomize All")
+with st.container(horizontal=True):
+    if st.button("Randomize All"):
+        st.session_state["Tamagotchi"] = random.choice(tamagotchiList)
+        st.session_state["Color"] = random.choice(colorList)
+        st.session_state["Eyes"] = random.choice(eyeList)
+    if st.button("Randomize Tama"):
+        st.session_state["Tamagotchi"] = random.choice(tamagotchiList)
+    if st.button("Randomize Color"):
+        st.session_state["Color"] = random.choice(colorList)
+    if st.button("Randomize Eyes"):
+        st.session_state["Eyes"] = random.choice(eyeList)
 
-if randomizeAll:
-    st.session_state["Tamagotchi"] = random.choice(list(tamagotchiList))
-    st.session_state["Color"] = random.choice(list(colorList))
-    st.session_state["Eyes"] = random.choice(list(eyeList))
-#Randomize Tama  
-with colran2:
-    randomizeTama = st.button("Randomize Tama")
-if randomizeTama:
-    st.session_state["Tamagotchi"] = random.choice(list(tamagotchiList))
-#Randomize Color  
-with colran3:
-    randomizeColor = st.button("Randomize Color")
-if randomizeColor:
-    st.session_state["Color"] = random.choice(list(colorList))
-#Randomize Eyes  
-with colran4:
-    randomizeEyes = st.button("Randomize Eyes")
-if randomizeEyes:
-    st.session_state["Eyes"] = random.choice(list(eyeList))
 
 chosenTama = st.selectbox("Tamagotchi", tamagotchiList,key="Tamagotchi")
 image = Image.open("character/" + chosenTama + ".png")
