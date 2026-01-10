@@ -27,15 +27,15 @@ if jadeCheck:
     
 #Randomizers
 with st.container(horizontal=True):
-    if st.button("Randomize All"):
+    if st.button("🎲 All"):
         st.session_state["Tamagotchi"] = random.choice(tamagotchiList)
         st.session_state["Color"] = random.choice(colorList)
         st.session_state["Eyes"] = random.choice(eyeList)
-    if st.button("Randomize Tama"):
+    if st.button("🎲 Tama"):
         st.session_state["Tamagotchi"] = random.choice(tamagotchiList)
-    if st.button("Randomize Color"):
+    if st.button("🎲 Color"):
         st.session_state["Color"] = random.choice(colorList)
-    if st.button("Randomize Eyes"):
+    if st.button("🎲 Eyes"):
         st.session_state["Eyes"] = random.choice(eyeList)
 
 
@@ -102,4 +102,5 @@ if st.button("Clear"):
     st.session_state["previmages"] = st.session_state["previmages"][:1]
 # Reverse it so it's new first
 for picture in reversed(st.session_state["previmages"][1:]):
+
     st.image(picture)
