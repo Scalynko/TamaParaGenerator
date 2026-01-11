@@ -21,6 +21,14 @@ available on Jade Forest in the lists. **Include Lab Tama characters** will
 include characters that you can breed with on Lab Tamas. You may have to remake
 your selections after changing the settings.
 
+Running locally
+---------------
+Set up venv/requirements as you'd usually do, then run
+
+```sh
+streamlit run main.py
+```
+
 Data source
 -----------
 This app is driven by a `data.json` file, which contains definitions for
