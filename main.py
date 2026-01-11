@@ -119,7 +119,9 @@ with Image.open(os.path.join('images', f'{selected_body['Id']}_body.png')) as bo
             if selected_body[prop][i] < draw_offset[i]:
                 draw_offset[i] = selected_body[prop][i]
 
-    draw_offset = [-draw_offset[0], -draw_offset[1]]  # Now this is how much to offset sprites so one of them starts at top left
+    # Now this is how much to offset sprites so the leftmost starts at the left
+    # and topmost starts at the top
+    draw_offset = [-draw_offset[0], -draw_offset[1]]
 
     image_dimension = [0, 0]
     for image in (body_image, eyes_image, mouth_image):
