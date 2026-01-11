@@ -256,7 +256,7 @@
       ]
     },
     {
-      "Name": "ROAR YOUNG",
+      "Name": "FOREST ROAR YOUNG",
       "Id": 3070,
       "Stage": 4,
       "IsJade": true,
@@ -271,7 +271,7 @@
       ]
     },
     {
-      "Name": "TODDLE YOUNG",
+      "Name": "FOREST TODDLE YOUNG",
       "Id": 3071,
       "Stage": 4,
       "IsJade": true,
@@ -286,7 +286,7 @@
       ]
     },
     {
-      "Name": "CHIRP YOUNG",
+      "Name": "FOREST CHIRP YOUNG",
       "Id": 3072,
       "Stage": 4,
       "IsJade": true,
@@ -301,7 +301,7 @@
       ]
     },
     {
-      "Name": "SPROUT YOUNG",
+      "Name": "FOREST SPROUT YOUNG",
       "Id": 3073,
       "Stage": 4,
       "IsJade": true,
@@ -1096,7 +1096,7 @@
       ]
     },
     {
-      "Name": "HORHOTCHI",
+      "Name": "FOREST HORHOTCHI",
       "Id": 4074,
       "Stage": 5,
       "IsJade": true,
