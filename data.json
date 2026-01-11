@@ -1,0 +1,2012 @@
+{
+  "Characters": [
+    {
+      "Name": "BABYMARUTCHI",
+      "Id": 1001,
+      "Stage": 2,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        30
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "LAND KID",
+      "Id": 2002,
+      "Stage": 3,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        25
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "WATER KID",
+      "Id": 2003,
+      "Stage": 3,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        31
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "SKY KID",
+      "Id": 2004,
+      "Stage": 3,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        1,
+        32
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "FOREST KID",
+      "Id": 2069,
+      "Stage": 3,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        1,
+        32
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "ROAR YOUNG",
+      "Id": 3005,
+      "Stage": 4,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        17
+      ],
+      "MouthPos": [
+        0,
+        16
+      ]
+    },
+    {
+      "Name": "TODDLE YOUNG",
+      "Id": 3006,
+      "Stage": 4,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        24
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "LICK YOUNG",
+      "Id": 3007,
+      "Stage": 4,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -1,
+        18
+      ],
+      "MouthPos": [
+        1,
+        24
+      ]
+    },
+    {
+      "Name": "SPROUT YOUNG",
+      "Id": 3008,
+      "Stage": 4,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        29
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "GLIDE YOUNG",
+      "Id": 3009,
+      "Stage": 4,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -3,
+        30
+      ],
+      "MouthPos": [
+        -3,
+        32
+      ]
+    },
+    {
+      "Name": "LEAP YOUNG",
+      "Id": 3010,
+      "Stage": 4,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -3,
+        26
+      ],
+      "MouthPos": [
+        -3,
+        28
+      ]
+    },
+    {
+      "Name": "PADDLE YOUNG",
+      "Id": 3011,
+      "Stage": 4,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -3,
+        30
+      ],
+      "MouthPos": [
+        -3,
+        32
+      ]
+    },
+    {
+      "Name": "FLOAT YOUNG",
+      "Id": 3012,
+      "Stage": 4,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        17
+      ],
+      "MouthPos": [
+        0,
+        19
+      ]
+    },
+    {
+      "Name": "FLAP YOUNG",
+      "Id": 3013,
+      "Stage": 4,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        17
+      ],
+      "MouthPos": [
+        0,
+        19
+      ]
+    },
+    {
+      "Name": "CHIRP  YOUNG",
+      "Id": 3014,
+      "Stage": 4,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        15
+      ],
+      "MouthPos": [
+        0,
+        17
+      ]
+    },
+    {
+      "Name": "BUMBLE YOUNG",
+      "Id": 3015,
+      "Stage": 4,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -1,
+        28
+      ],
+      "MouthPos": [
+        -1,
+        30
+      ]
+    },
+    {
+      "Name": "ROCKY YOUNG",
+      "Id": 3016,
+      "Stage": 4,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        1,
+        25
+      ],
+      "MouthPos": [
+        1,
+        27
+      ]
+    },
+    {
+      "Name": "ROAR YOUNG",
+      "Id": 3070,
+      "Stage": 4,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        17
+      ],
+      "MouthPos": [
+        0,
+        16
+      ]
+    },
+    {
+      "Name": "TODDLE YOUNG",
+      "Id": 3071,
+      "Stage": 4,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        24
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "CHIRP YOUNG",
+      "Id": 3072,
+      "Stage": 4,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        15
+      ],
+      "MouthPos": [
+        0,
+        17
+      ]
+    },
+    {
+      "Name": "SPROUT YOUNG",
+      "Id": 3073,
+      "Stage": 4,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        29
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "BBMARUTCHI",
+      "Id": 4017,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        24
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "MEOWTCHI",
+      "Id": 4018,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        20
+      ],
+      "MouthPos": [
+        0,
+        20
+      ]
+    },
+    {
+      "Name": "POCHITCHI",
+      "Id": 4019,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -1,
+        7
+      ],
+      "MouthPos": [
+        0,
+        16
+      ]
+    },
+    {
+      "Name": "GUMAX",
+      "Id": 4020,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        1,
+        10
+      ],
+      "MouthPos": [
+        0,
+        15
+      ]
+    },
+    {
+      "Name": "RATCHI",
+      "Id": 4021,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        15
+      ],
+      "MouthPos": [
+        0,
+        15
+      ]
+    },
+    {
+      "Name": "MAMETCHI",
+      "Id": 4022,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        20
+      ],
+      "MouthPos": [
+        0,
+        20
+      ]
+    },
+    {
+      "Name": "MIMITCHI",
+      "Id": 4023,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        23
+      ],
+      "MouthPos": [
+        0,
+        24
+      ]
+    },
+    {
+      "Name": "MOLMOTCHI",
+      "Id": 4024,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        1,
+        8
+      ],
+      "MouthPos": [
+        0,
+        12
+      ]
+    },
+    {
+      "Name": "SHEEPTCHI",
+      "Id": 4025,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        19
+      ],
+      "MouthPos": [
+        0,
+        25
+      ]
+    },
+    {
+      "Name": "SEBIRETCHI",
+      "Id": 4026,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -3,
+        12
+      ],
+      "MouthPos": [
+        0,
+        23
+      ]
+    },
+    {
+      "Name": "LEOPATCHI",
+      "Id": 4027,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -5,
+        9
+      ],
+      "MouthPos": [
+        0,
+        18
+      ]
+    },
+    {
+      "Name": "ELIZARDOTCHI",
+      "Id": 4028,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        20
+      ],
+      "MouthPos": [
+        0,
+        25
+      ]
+    },
+    {
+      "Name": "HEAVYTCHI",
+      "Id": 4029,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        18
+      ],
+      "MouthPos": [
+        0,
+        25
+      ]
+    },
+    {
+      "Name": "FURAWATCHI",
+      "Id": 4030,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        18
+      ],
+      "MouthPos": [
+        0,
+        19
+      ]
+    },
+    {
+      "Name": "TUSTUSTCHI",
+      "Id": 4031,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        1,
+        12
+      ],
+      "MouthPos": [
+        0,
+        16
+      ]
+    },
+    {
+      "Name": "POTSUNENTCHI",
+      "Id": 4032,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        27
+      ],
+      "MouthPos": [
+        0,
+        28
+      ]
+    },
+    {
+      "Name": "SHIGEMI-SAN",
+      "Id": 4033,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        35
+      ],
+      "MouthPos": [
+        0,
+        36
+      ]
+    },
+    {
+      "Name": "IRUKATCHI",
+      "Id": 4034,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        13
+      ],
+      "MouthPos": [
+        0,
+        14
+      ]
+    },
+    {
+      "Name": "KAMETCHI",
+      "Id": 4035,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        26
+      ],
+      "MouthPos": [
+        0,
+        30
+      ]
+    },
+    {
+      "Name": "BEAVERTCHI",
+      "Id": 4036,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        1,
+        11
+      ],
+      "MouthPos": [
+        0,
+        12
+      ]
+    },
+    {
+      "Name": "KUJIRATCHI",
+      "Id": 4037,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        1,
+        24
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "AXOLOPATCHI",
+      "Id": 4038,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        22
+      ],
+      "MouthPos": [
+        0,
+        23
+      ]
+    },
+    {
+      "Name": "IMORITCHI",
+      "Id": 4039,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -5,
+        11
+      ],
+      "MouthPos": [
+        -5,
+        13
+      ]
+    },
+    {
+      "Name": "KAWAZUTCHI",
+      "Id": 4040,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        10
+      ],
+      "MouthPos": [
+        0,
+        13
+      ]
+    },
+    {
+      "Name": "URUOTCHI",
+      "Id": 4041,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -2,
+        26
+      ],
+      "MouthPos": [
+        0,
+        34
+      ]
+    },
+    {
+      "Name": "TACHUTCHI",
+      "Id": 4042,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        14
+      ],
+      "MouthPos": [
+        0,
+        15
+      ]
+    },
+    {
+      "Name": "SHARKTCHI",
+      "Id": 4043,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        14
+      ],
+      "MouthPos": [
+        0,
+        19
+      ]
+    },
+    {
+      "Name": "ANKOTCHI",
+      "Id": 4044,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        23
+      ],
+      "MouthPos": [
+        0,
+        33
+      ]
+    },
+    {
+      "Name": "OTOTOTCHI",
+      "Id": 4045,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        19
+      ],
+      "MouthPos": [
+        0,
+        21
+      ]
+    },
+    {
+      "Name": "KURARATCHI",
+      "Id": 4046,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        3
+      ],
+      "MouthPos": [
+        0,
+        3
+      ]
+    },
+    {
+      "Name": "MENDAKOTCHI",
+      "Id": 4047,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        26
+      ],
+      "MouthPos": [
+        0,
+        25
+      ]
+    },
+    {
+      "Name": "AMEFURATCHI",
+      "Id": 4048,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        12
+      ],
+      "MouthPos": [
+        0,
+        18
+      ]
+    },
+    {
+      "Name": "GUSOKUTCHI",
+      "Id": 4049,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        34
+      ],
+      "MouthPos": [
+        0,
+        35
+      ]
+    },
+    {
+      "Name": "HORHOTCHI",
+      "Id": 4050,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        15
+      ],
+      "MouthPos": [
+        0,
+        15
+      ]
+    },
+    {
+      "Name": "MONGATCHI",
+      "Id": 4051,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        13
+      ],
+      "MouthPos": [
+        0,
+        15
+      ]
+    },
+    {
+      "Name": "EAGLETCHI",
+      "Id": 4052,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        12
+      ],
+      "MouthPos": [
+        0,
+        21
+      ]
+    },
+    {
+      "Name": "BATCHI",
+      "Id": 4053,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        26
+      ],
+      "MouthPos": [
+        0,
+        29
+      ]
+    },
+    {
+      "Name": "PAPILLOTCHI",
+      "Id": 4054,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        20
+      ],
+      "MouthPos": [
+        0,
+        23
+      ]
+    },
+    {
+      "Name": "KABUTOTCHI",
+      "Id": 4055,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        15
+      ],
+      "MouthPos": [
+        0,
+        15
+      ]
+    },
+    {
+      "Name": "TENTOTCHI",
+      "Id": 4056,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -1,
+        15
+      ],
+      "MouthPos": [
+        0,
+        23
+      ]
+    },
+    {
+      "Name": "HATCHITCHI",
+      "Id": 4057,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        11
+      ],
+      "MouthPos": [
+        0,
+        16
+      ]
+    },
+    {
+      "Name": "KUCHIPATCHI",
+      "Id": 4058,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        9
+      ],
+      "MouthPos": [
+        0,
+        11
+      ]
+    },
+    {
+      "Name": "BATATCHI",
+      "Id": 4059,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        14
+      ],
+      "MouthPos": [
+        0,
+        18
+      ]
+    },
+    {
+      "Name": "PEACOTCHI",
+      "Id": 4060,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        21
+      ],
+      "MouthPos": [
+        0,
+        27
+      ]
+    },
+    {
+      "Name": "KIWITCHI",
+      "Id": 4061,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        7
+      ],
+      "MouthPos": [
+        0,
+        13
+      ]
+    },
+    {
+      "Name": "GEMTCHI",
+      "Id": 4062,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        24
+      ],
+      "MouthPos": [
+        0,
+        25
+      ]
+    },
+    {
+      "Name": "ORETATCHI",
+      "Id": 4063,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -9,
+        13
+      ],
+      "MouthPos": [
+        0,
+        18
+      ]
+    },
+    {
+      "Name": "ISHIKOROTCHI",
+      "Id": 4064,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        19
+      ],
+      "MouthPos": [
+        0,
+        22
+      ]
+    },
+    {
+      "Name": "MAGMATCHI",
+      "Id": 4065,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        21
+      ],
+      "MouthPos": [
+        0,
+        24
+      ]
+    },
+    {
+      "Name": "CHODRACOTCHI",
+      "Id": 4066,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -1,
+        15
+      ],
+      "MouthPos": [
+        0,
+        18
+      ]
+    },
+    {
+      "Name": "MERMARINTCHI",
+      "Id": 4067,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -1,
+        5
+      ],
+      "MouthPos": [
+        0,
+        8
+      ]
+    },
+    {
+      "Name": "YAYACORNTCHI",
+      "Id": 4068,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": false,
+      "EyePos": [
+        -1,
+        26
+      ],
+      "MouthPos": [
+        0,
+        29
+      ]
+    },
+    {
+      "Name": "HORHOTCHI",
+      "Id": 4074,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        15
+      ],
+      "MouthPos": [
+        0,
+        15
+      ]
+    },
+    {
+      "Name": "KONKOTCHI",
+      "Id": 4075,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        -3,
+        8
+      ],
+      "MouthPos": [
+        0,
+        16
+      ]
+    },
+    {
+      "Name": "TIGAOTCHI",
+      "Id": 4076,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        26
+      ],
+      "MouthPos": [
+        0,
+        29
+      ]
+    },
+    {
+      "Name": "TANOONTCHI",
+      "Id": 4077,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        -4,
+        14
+      ],
+      "MouthPos": [
+        0,
+        16
+      ]
+    },
+    {
+      "Name": "LESSAPANTCHI",
+      "Id": 4078,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        20
+      ],
+      "MouthPos": [
+        0,
+        20
+      ]
+    },
+    {
+      "Name": "KANOKOTCHI",
+      "Id": 4079,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        20
+      ],
+      "MouthPos": [
+        0,
+        25
+      ]
+    },
+    {
+      "Name": "SUIGYUTCHI",
+      "Id": 4080,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        16
+      ],
+      "MouthPos": [
+        0,
+        23
+      ]
+    },
+    {
+      "Name": "PANBOOTCHI",
+      "Id": 4081,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        19
+      ],
+      "MouthPos": [
+        0,
+        24
+      ]
+    },
+    {
+      "Name": "KACHITCHI",
+      "Id": 4082,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        13
+      ],
+      "MouthPos": [
+        0,
+        12
+      ]
+    },
+    {
+      "Name": "TOKIPATCHI",
+      "Id": 4083,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        10
+      ],
+      "MouthPos": [
+        0,
+        12
+      ]
+    },
+    {
+      "Name": "KUCHIPATCHI",
+      "Id": 4084,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        9
+      ],
+      "MouthPos": [
+        0,
+        11
+      ]
+    },
+    {
+      "Name": "SPARROTCHI",
+      "Id": 4085,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        12
+      ],
+      "MouthPos": [
+        0,
+        13
+      ]
+    },
+    {
+      "Name": "SHIITAKETCHI",
+      "Id": 4086,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        1,
+        25
+      ],
+      "MouthPos": [
+        0,
+        24
+      ]
+    },
+    {
+      "Name": "PEATCHI",
+      "Id": 4087,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        1,
+        24
+      ],
+      "MouthPos": [
+        0,
+        24
+      ]
+    },
+    {
+      "Name": "NAPPATCHI",
+      "Id": 4088,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        27
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "RUSHRADITCHI",
+      "Id": 4089,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        19
+      ],
+      "MouthPos": [
+        0,
+        22
+      ]
+    },
+    {
+      "Name": "TATSUTCHI",
+      "Id": 4090,
+      "Stage": 5,
+      "IsJade": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        9
+      ],
+      "MouthPos": [
+        0,
+        11
+      ]
+    },
+    {
+      "Name": "MEERTCHI",
+      "Id": 60100,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": true,
+      "EyePos": [
+        -3,
+        11
+      ],
+      "MouthPos": [
+        -3,
+        13
+      ]
+    },
+    {
+      "Name": "SHYONTCHI",
+      "Id": 60101,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": true,
+      "EyePos": [
+        -3,
+        14
+      ],
+      "MouthPos": [
+        -3,
+        17
+      ]
+    },
+    {
+      "Name": "POOPTCHI",
+      "Id": 60102,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": true,
+      "EyePos": [
+        0,
+        18
+      ],
+      "MouthPos": [
+        0,
+        19
+      ]
+    },
+    {
+      "Name": "OMARUTCHI",
+      "Id": 60103,
+      "Stage": 5,
+      "IsJade": false,
+      "IsExternal": true,
+      "EyePos": [
+        -5,
+        19
+      ],
+      "MouthPos": [
+        -5,
+        19
+      ]
+    }
+  ],
+  "Palettes": [
+    {
+      "Name": "Original",
+      "Colors": []
+    },
+    {
+      "Name": "Red",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        255,
+        194,
+        197,
+        255,
+        255,
+        142,
+        140,
+        255,
+        255,
+        101,
+        99,
+        255,
+        255,
+        142,
+        140,
+        255,
+        255,
+        101,
+        99,
+        255,
+        222,
+        53,
+        49,
+        255
+      ]
+    },
+    {
+      "Name": "Hot Pink",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        255,
+        186,
+        230,
+        255,
+        255,
+        130,
+        181,
+        255,
+        255,
+        89,
+        148,
+        255,
+        255,
+        130,
+        181,
+        255,
+        255,
+        89,
+        148,
+        255,
+        214,
+        81,
+        132,
+        255
+      ]
+    },
+    {
+      "Name": "Purple",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        239,
+        190,
+        255,
+        255,
+        222,
+        138,
+        255,
+        255,
+        173,
+        97,
+        247,
+        255,
+        222,
+        138,
+        255,
+        255,
+        173,
+        97,
+        247,
+        255,
+        132,
+        49,
+        222,
+        255
+      ]
+    },
+    {
+      "Name": "Indigo",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        214,
+        210,
+        255,
+        255,
+        181,
+        182,
+        255,
+        255,
+        148,
+        154,
+        255,
+        255,
+        181,
+        182,
+        255,
+        255,
+        115,
+        117,
+        239,
+        255,
+        90,
+        97,
+        214,
+        255
+      ]
+    },
+    {
+      "Name": "Blue",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        173,
+        235,
+        255,
+        255,
+        115,
+        206,
+        255,
+        255,
+        74,
+        166,
+        255,
+        255,
+        115,
+        198,
+        255,
+        255,
+        74,
+        166,
+        255,
+        255,
+        33,
+        138,
+        230,
+        255
+      ]
+    },
+    {
+      "Name": "Teal",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        206,
+        247,
+        247,
+        255,
+        173,
+        239,
+        239,
+        255,
+        140,
+        215,
+        214,
+        255,
+        173,
+        239,
+        239,
+        255,
+        140,
+        215,
+        214,
+        255,
+        90,
+        186,
+        181,
+        255
+      ]
+    },
+    {
+      "Name": "Green",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        230,
+        255,
+        165,
+        255,
+        173,
+        235,
+        123,
+        255,
+        123,
+        219,
+        58,
+        255,
+        173,
+        235,
+        123,
+        255,
+        123,
+        219,
+        58,
+        255,
+        90,
+        182,
+        33,
+        255
+      ]
+    },
+    {
+      "Name": "Yellow",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        255,
+        251,
+        222,
+        255,
+        255,
+        243,
+        148,
+        255,
+        255,
+        235,
+        82,
+        255,
+        255,
+        243,
+        173,
+        255,
+        255,
+        235,
+        82,
+        255,
+        247,
+        202,
+        49,
+        255
+      ]
+    },
+    {
+      "Name": "Orange",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        255,
+        231,
+        197,
+        255,
+        255,
+        210,
+        140,
+        255,
+        255,
+        166,
+        99,
+        255,
+        255,
+        210,
+        140,
+        255,
+        255,
+        166,
+        99,
+        255,
+        247,
+        134,
+        49,
+        255
+      ]
+    },
+    {
+      "Name": "Light Pink",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        255,
+        227,
+        247,
+        255,
+        255,
+        210,
+        239,
+        255,
+        255,
+        178,
+        230,
+        255,
+        255,
+        186,
+        230,
+        255,
+        255,
+        130,
+        181,
+        255,
+        255,
+        89,
+        148,
+        255
+      ]
+    },
+    {
+      "Name": "Lavender",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        230,
+        227,
+        255,
+        255,
+        214,
+        210,
+        255,
+        255,
+        181,
+        182,
+        255,
+        255,
+        214,
+        210,
+        255,
+        255,
+        181,
+        182,
+        255,
+        255,
+        148,
+        154,
+        255,
+        255
+      ]
+    },
+    {
+      "Name": "Sky Blue",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        214,
+        243,
+        255,
+        255,
+        173,
+        235,
+        255,
+        255,
+        115,
+        206,
+        255,
+        255,
+        173,
+        235,
+        255,
+        255,
+        115,
+        206,
+        255,
+        255,
+        74,
+        166,
+        255,
+        255
+      ]
+    },
+    {
+      "Name": "Light Green",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        230,
+        255,
+        197,
+        255,
+        214,
+        255,
+        165,
+        255,
+        173,
+        235,
+        123,
+        255,
+        214,
+        255,
+        165,
+        255,
+        173,
+        235,
+        123,
+        255,
+        123,
+        219,
+        58,
+        255
+      ]
+    },
+    {
+      "Name": "Light Yellow",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        255,
+        255,
+        239,
+        255,
+        255,
+        251,
+        222,
+        255,
+        255,
+        243,
+        148,
+        255,
+        255,
+        251,
+        222,
+        255,
+        255,
+        243,
+        148,
+        255,
+        255,
+        235,
+        82,
+        255
+      ]
+    },
+    {
+      "Name": "White",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        230,
+        231,
+        230,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        247,
+        247,
+        255,
+        230,
+        223,
+        222,
+        255
+      ]
+    },
+    {
+      "Name": "Gray",
+      "Colors": [
+        0,
+        255,
+        0,
+        255,
+        0,
+        0,
+        99,
+        255,
+        230,
+        231,
+        247,
+        255,
+        206,
+        206,
+        230,
+        255,
+        165,
+        166,
+        189,
+        255,
+        206,
+        206,
+        230,
+        255,
+        165,
+        166,
+        189,
+        255,
+        132,
+        134,
+        165,
+        255
+      ]
+    }
+  ]
+}
