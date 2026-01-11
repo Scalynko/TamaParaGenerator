@@ -105,57 +105,59 @@ def selectbox_formatter(data):
 selected_body = body_select_slot.selectbox('Body', charas_list, key='body', format_func=selectbox_formatter)
 selected_eyes = eyes_select_slot.selectbox('Eyes', eyes_list, key='eyes', format_func=selectbox_formatter)
 selected_color = color_select_slot.selectbox('Color', data['Palettes'], key='color', format_func=selectbox_formatter)
-
-# Generate image
-with Image.open(os.path.join('images', f'{selected_body['Id']}_body.png')) as body_image, \
-    Image.open(os.path.join('images', f'{selected_eyes['Id']}_eyes.png')) as eyes_image, \
-    Image.open(os.path.join('images', f'{selected_body['Id']}_mouth.png')) as mouth_image:
-
-    # Try to figure out drawing offsets and dimension of image, since some parts may
-    # have negative offsets
-    draw_offset = [0, 0]
-    for prop in ('EyePos', 'MouthPos'):
-        for i in range(2):
-            if selected_body[prop][i] < draw_offset[i]:
-                draw_offset[i] = selected_body[prop][i]
-
-    # Now this is how much to offset sprites so the leftmost starts at the left
-    # and topmost starts at the top
-    draw_offset = [-draw_offset[0], -draw_offset[1]]
-
-    image_dimension = [0, 0]
-    for image in (body_image, eyes_image, mouth_image):
-        part_max_x = image.width + draw_offset[0]
-        part_max_y = image.height + draw_offset[1]
-
-        if part_max_x > image_dimension[0]:
-            image_dimension[0] = part_max_x
-        if part_max_y > image_dimension[1]:
-            image_dimension[1] = part_max_y
-
-    def replace_palette(image, new_palette):
-        curr_palette = image.getpalette('RGBA')
-        curr_palette[:len(new_palette)] = new_palette
-        image.putpalette(curr_palette, 'RGBA')
-
-    if selected_color['Colors']:
-        replace_palette(body_image, selected_color['Colors'])
-        replace_palette(mouth_image, selected_color['Colors'])
-
-    composite_image = Image.new('RGBA', image_dimension, '#fff0')
-    composite_image.paste(body_image, (draw_offset[0], draw_offset[1]), body_image.convert('RGBA'))
-    composite_image.paste(eyes_image, (draw_offset[0] + selected_body['EyePos'][0], draw_offset[1] + selected_body['EyePos'][1]), eyes_image.convert('RGBA'))
-    composite_image.paste(mouth_image, (draw_offset[0] + selected_body['MouthPos'][0], draw_offset[1] + selected_body['MouthPos'][1]), mouth_image.convert('RGBA'))
-
-# Add to history
 key = f'{selected_body['Id']}_{selected_eyes['Id']}_{selected_color['Name']}'
-if key not in st.session_state['history']:
+
+if key in st.session_state['history']:
+    composite_image = st.session_state['history'][key]['image']
+else:
+    # Generate image
+    with Image.open(os.path.join('images', f'{selected_body['Id']}_body.png')) as body_image, \
+        Image.open(os.path.join('images', f'{selected_eyes['Id']}_eyes.png')) as eyes_image, \
+        Image.open(os.path.join('images', f'{selected_body['Id']}_mouth.png')) as mouth_image:
+
+        # Try to figure out drawing offsets and dimension of image, since some parts may
+        # have negative offsets
+        draw_offset = [0, 0]
+        for prop in ('EyePos', 'MouthPos'):
+            for i in range(2):
+                if selected_body[prop][i] < draw_offset[i]:
+                    draw_offset[i] = selected_body[prop][i]
+
+        # Now this is how much to offset sprites so the leftmost starts at the left
+        # and topmost starts at the top
+        draw_offset = [-draw_offset[0], -draw_offset[1]]
+
+        image_dimension = [0, 0]
+        for image in (body_image, eyes_image, mouth_image):
+            part_max_x = image.width + draw_offset[0]
+            part_max_y = image.height + draw_offset[1]
+
+            if part_max_x > image_dimension[0]:
+                image_dimension[0] = part_max_x
+            if part_max_y > image_dimension[1]:
+                image_dimension[1] = part_max_y
+
+        def replace_palette(image, new_palette):
+            curr_palette = image.getpalette('RGBA')
+            curr_palette[:len(new_palette)] = new_palette
+            image.putpalette(curr_palette, 'RGBA')
+
+        if selected_color['Colors']:
+            replace_palette(body_image, selected_color['Colors'])
+            replace_palette(mouth_image, selected_color['Colors'])
+
+        composite_image = Image.new('RGBA', image_dimension, '#fff0')
+        composite_image.paste(body_image, (draw_offset[0], draw_offset[1]), body_image.convert('RGBA'))
+        composite_image.paste(eyes_image, (draw_offset[0] + selected_body['EyePos'][0], draw_offset[1] + selected_body['EyePos'][1]), eyes_image.convert('RGBA'))
+        composite_image.paste(mouth_image, (draw_offset[0] + selected_body['MouthPos'][0], draw_offset[1] + selected_body['MouthPos'][1]), mouth_image.convert('RGBA'))
+
+    # Add to history
     # I originally wanted images to click to restore selections, but apparently
     # clickable images is not a thing
     st.session_state['history'][key] = {
-        'selected_body': selected_body,
-        'selected_eyes': selected_eyes,
-        'selected_color': selected_color,
+        'selected_body': selected_body['Name'],
+        'selected_eyes': selected_eyes['Name'],
+        'selected_color': selected_color['Name'],
         'image': composite_image
     }
 
@@ -168,4 +170,4 @@ with history_container:
     history_list = list(st.session_state['history'].items())
     history_list.reverse()
     for k, v in history_list:
-        st.image(v['image'], f'{v['selected_body']['Name']} x {v['selected_eyes']['Name']}, {v['selected_color']['Name']}', 96)
+        st.image(v['image'], f'{v['selected_body']} x {v['selected_eyes']}, {v['selected_color']}', 96)
