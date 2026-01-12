@@ -72,7 +72,7 @@ def chara_filter(chara):
 
 def eyes_filter(chara):
     if not opt_include_non_breedable:
-        if chara['Stage'] < 5:
+        if chara['Stage'] < 5 or chara['Name'] == 'BBMARUTCHI':
             return False
     
     return True
@@ -171,3 +171,4 @@ with history_container:
     history_list.reverse()
     for k, v in history_list:
         st.image(v['image'], f'{v['selected_body']} x {v['selected_eyes']}, {v['selected_color']}', 96)
+
