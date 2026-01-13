@@ -33,10 +33,11 @@ with st.container(border=True):
 
 randomize_all_slot = st.empty()
 
-with st.container(border=True, horizontal=True):
-    opt_include_non_breedable = st.checkbox('Include non-breedable eyes')
+with st.container(border=True, horizontal=True): 
+    opt_include_non_breedable = st.checkbox('Include non-breedable eyes')        
     opt_include_jade_charas = st.checkbox('Include Jade Forest-exclusive characters', True)
-    opt_include_external_charas = st.checkbox('Include Lab Tama characters', True)
+    opt_include_external_eyes = st.checkbox('Include Lab Tama eyes', True)
+    opt_include_external_bodies = st.checkbox('Include Lab Tama bodies')
 
 with st.container(border=True):
     col_image_big, col_image_small = st.columns(2, vertical_alignment='center')
@@ -63,11 +64,14 @@ def chara_filter(chara):
     if not opt_include_jade_charas:
         if chara['IsJade']:
             return False
-    
-    if not opt_include_external_charas:
+        
+    return True
+
+def body_filter(chara):
+    if not opt_include_external_bodies:
         if chara['IsExternal']:
             return False
-        
+            
     return True
 
 def eyes_filter(chara):
@@ -75,15 +79,19 @@ def eyes_filter(chara):
         if chara['Stage'] < 5 or chara['Name'] == 'BBMARUTCHI':
             return False
     
+    if not opt_include_external_eyes:
+        if chara['IsExternal']:
+            return False
     return True
 
 charas_list = list(filter(chara_filter, data['Characters']))
+bodies_list = list(filter(body_filter, charas_list))
 eyes_list = list(filter(eyes_filter, charas_list))
 
 # Render buttons and selectboxes
 
 if body_select_button_slot.button('🎲', 'random_body', use_container_width=True):
-    st.session_state['body'] = random.choice(charas_list)
+    st.session_state['body'] = random.choice(bodies_list)
 
 if eyes_select_button_slot.button('🎲', 'random_eyes', use_container_width=True):
     st.session_state['eyes'] = random.choice(eyes_list)
@@ -92,7 +100,7 @@ if color_select_button_slot.button('🎲', 'random_color', use_container_width=T
     st.session_state['color'] = random.choice(data['Palettes'])
 
 if randomize_all_slot.button('🎲 All', 'random_all', use_container_width=True):
-    st.session_state['body'] = random.choice(charas_list)
+    st.session_state['body'] = random.choice(bodies_list)
     st.session_state['eyes'] = random.choice(eyes_list)
     st.session_state['color'] = random.choice(data['Palettes'])
 
@@ -102,7 +110,7 @@ def selectbox_formatter(data):
     else:
         return ''
 
-selected_body = body_select_slot.selectbox('Body', charas_list, key='body', format_func=selectbox_formatter)
+selected_body = body_select_slot.selectbox('Body', bodies_list, key='body', format_func=selectbox_formatter)
 selected_eyes = eyes_select_slot.selectbox('Eyes', eyes_list, key='eyes', format_func=selectbox_formatter)
 selected_color = color_select_slot.selectbox('Color', data['Palettes'], key='color', format_func=selectbox_formatter)
 key = f'{selected_body['Id']}_{selected_eyes['Id']}_{selected_color['Name']}'
@@ -171,4 +179,3 @@ with history_container:
     history_list.reverse()
     for k, v in history_list:
         st.image(v['image'], f'{v['selected_body']} x {v['selected_eyes']}, {v['selected_color']}', 96)
-
