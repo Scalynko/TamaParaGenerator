@@ -9,7 +9,8 @@ Usage
 Select the character for body and eyes, then a color. The preview will update
 when you update any selection. Under each selection is a randomize button that
 will randomize the selection above it. You can also click on the randomize all
-button to randomize all three selections.
+button to randomize all three selections. There is also a preview button that
+display all the items in the selection, along with its other selections.
 
 A running history of your generated characters is available in the history
 section.
@@ -17,9 +18,10 @@ section.
 You can customize the set of characters that appear in the lists. **Include
 non-breedable eyes** will include eyes of non-adult characters in the eyes list.
 **Include Jade Forest-exclusive characters** will include characters only
-available on Jade Forest in the lists. **Include Lab Tama characters** will
-include characters that you can breed with on Lab Tamas. You may have to remake
-your selections after changing the settings.
+available on Jade Forest in the lists. **Include Lab Tama eyes** will
+include the eyes of the characters that you can breed with on Lab Tamas.
+**Include Lab Tama bodies** will include the bodies of the Lab Tama
+characters. You may have to remake your selections after changing the settings.
 
 Running locally
 ---------------
