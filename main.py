@@ -22,14 +22,17 @@ with st.container(border=True):
         with st.container():
             body_select_slot = st.empty()
             body_select_button_slot = st.empty()
+            body_select_preview_slot = st.empty()
     with col_eyes_select:
         with st.container():
             eyes_select_slot = st.empty()
             eyes_select_button_slot = st.empty()
+            eyes_select_preview_slot = st.empty()
 
     with st.container():
             color_select_slot = st.empty()
             color_select_button_slot = st.empty()
+            color_select_preview_slot = st.empty()
 
 randomize_all_slot = st.empty()
 
@@ -115,21 +118,19 @@ selected_eyes = eyes_select_slot.selectbox('Eyes', eyes_list, key='eyes', format
 selected_color = color_select_slot.selectbox('Color', data['Palettes'], key='color', format_func=selectbox_formatter)
 key = f'{selected_body['Id']}_{selected_eyes['Id']}_{selected_color['Name']}'
 
-if key in st.session_state['history']:
-    composite_image = st.session_state['history'][key]['image']
-else:
-    # Generate image
-    with Image.open(os.path.join('images', f'{selected_body['Id']}_body.png')) as body_image, \
-        Image.open(os.path.join('images', f'{selected_eyes['Id']}_eyes.png')) as eyes_image, \
-        Image.open(os.path.join('images', f'{selected_body['Id']}_mouth.png')) as mouth_image:
+# Generate image
+def generate_image(body, eyes, color):
+    with Image.open(os.path.join('images', f'{body['Id']}_body.png')) as body_image, \
+        Image.open(os.path.join('images', f'{eyes['Id']}_eyes.png')) as eyes_image, \
+        Image.open(os.path.join('images', f'{body['Id']}_mouth.png')) as mouth_image:
 
         # Try to figure out drawing offsets and dimension of image, since some parts may
         # have negative offsets
         draw_offset = [0, 0]
         for prop in ('EyePos', 'MouthPos'):
             for i in range(2):
-                if selected_body[prop][i] < draw_offset[i]:
-                    draw_offset[i] = selected_body[prop][i]
+                if body[prop][i] < draw_offset[i]:
+                    draw_offset[i] = body[prop][i]
 
         # Now this is how much to offset sprites so the leftmost starts at the left
         # and topmost starts at the top
@@ -150,15 +151,35 @@ else:
             curr_palette[:len(new_palette)] = new_palette
             image.putpalette(curr_palette, 'RGBA')
 
-        if selected_color['Colors']:
-            replace_palette(body_image, selected_color['Colors'])
-            replace_palette(mouth_image, selected_color['Colors'])
+        if color['Colors']:
+            replace_palette(body_image, color['Colors'])
+            replace_palette(mouth_image, color['Colors'])
 
         composite_image = Image.new('RGBA', image_dimension, '#fff0')
         composite_image.paste(body_image, (draw_offset[0], draw_offset[1]), body_image.convert('RGBA'))
-        composite_image.paste(eyes_image, (draw_offset[0] + selected_body['EyePos'][0], draw_offset[1] + selected_body['EyePos'][1]), eyes_image.convert('RGBA'))
-        composite_image.paste(mouth_image, (draw_offset[0] + selected_body['MouthPos'][0], draw_offset[1] + selected_body['MouthPos'][1]), mouth_image.convert('RGBA'))
+        composite_image.paste(eyes_image, (draw_offset[0] + body['EyePos'][0], draw_offset[1] + body['EyePos'][1]), eyes_image.convert('RGBA'))
+        composite_image.paste(mouth_image, (draw_offset[0] + body['MouthPos'][0], draw_offset[1] + body['MouthPos'][1]), mouth_image.convert('RGBA'))
+    return(composite_image)
 
+# Preview Tamagotchis with different features
+@st.dialog("Preview", width="large")
+def preview(list):
+    with st.container(horizontal=True, horizontal_alignment="center"):
+        if list == "body":
+            for i in bodies_list:
+                st.image(generate_image(i, selected_eyes, selected_color), f'{i['Name']} x {selected_eyes['Name']}, {selected_color['Name']}', 80)
+        elif list == "eyes":
+            for i in eyes_list:
+                st.image(generate_image(selected_body, i, selected_color), f'{selected_body['Name']} x {i['Name']}, {selected_color['Name']}', 80)
+        elif list == "color":
+            for i in data['Palettes']:
+                st.image(generate_image(selected_body, selected_eyes, i), f'{selected_body['Name']} x {selected_eyes['Name']}, {i['Name']}', 80)
+
+
+if key in st.session_state['history']:
+    composite_image = st.session_state['history'][key]['image']
+else:
+    composite_image = generate_image(selected_body, selected_eyes, selected_color)
     # Add to history
     # I originally wanted images to click to restore selections, but apparently
     # clickable images is not a thing
@@ -168,7 +189,14 @@ else:
         'selected_color': selected_color['Name'],
         'image': composite_image
     }
-
+# Render Preview buttons
+if body_select_preview_slot.button('🔎', 'preview_bodytype', use_container_width=True):
+    preview("body")
+if eyes_select_preview_slot.button('🔎', 'preview_eyetype', use_container_width=True):
+    preview("eyes")
+if color_select_preview_slot.button('🔎', 'preview_colortype', use_container_width=True):
+    preview("color")
+    
 # Render image
 out_image_slot_big.image(composite_image, width=160)
 out_image_slot_small.image(composite_image)
