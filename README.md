@@ -10,7 +10,8 @@ Select the character for body and eyes, then a color. The preview will update
 when you update any selection. Under each selection is a randomize button that
 will randomize the selection above it. You can also click on the randomize all
 button to randomize all three selections. There is also a preview button that
-display all the items in the selection, along with its other selections.
+display all the items in the selection with the selected features without
+needing to randomize or go through all of them.
 
 A running history of your generated characters is available in the history
 section.
