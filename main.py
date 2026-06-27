@@ -36,9 +36,10 @@ with st.container(border=True):
 
 randomize_all_slot = st.empty()
 
-with st.container(border=True, horizontal=True): 
-    opt_include_non_breedable = st.checkbox('Include non-breedable eyes')        
+with st.container(border=True, horizontal=True):
+    opt_include_non_breedable = st.checkbox('Include non-breedable eyes')
     opt_include_jade_charas = st.checkbox('Include Jade Forest-exclusive characters', True)
+    opt_include_wave3_charas = st.checkbox('Include Orange Tropics and White Glacier characters', True)
     opt_include_external_eyes = st.checkbox('Include Lab Tama eyes', True)
     opt_include_external_bodies = st.checkbox('Include Lab Tama bodies')
 
@@ -67,21 +68,25 @@ def chara_filter(chara):
     if not opt_include_jade_charas:
         if chara['IsJade']:
             return False
-        
+
+    if not opt_include_wave3_charas:
+        if chara['IsWave3']:
+            return False
+
     return True
 
 def body_filter(chara):
     if not opt_include_external_bodies:
         if chara['IsExternal']:
             return False
-            
+
     return True
 
 def eyes_filter(chara):
     if not opt_include_non_breedable:
         if chara['Stage'] < 5 or chara['Name'] == 'BBMARUTCHI':
             return False
-    
+
     if not opt_include_external_eyes:
         if chara['IsExternal']:
             return False
@@ -196,7 +201,7 @@ if eyes_select_preview_slot.button('🔎', 'preview_eyetype', use_container_widt
     preview("eyes")
 if color_select_preview_slot.button('🔎', 'preview_colortype', use_container_width=True):
     preview("color")
-    
+
 # Render image
 out_image_slot_big.image(composite_image, width=160)
 out_image_slot_small.image(composite_image)
