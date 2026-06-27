@@ -5,6 +5,7 @@
       "Id": 1001,
       "Stage": 2,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -20,6 +21,7 @@
       "Id": 2002,
       "Stage": 3,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -35,6 +37,7 @@
       "Id": 2003,
       "Stage": 3,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -50,6 +53,7 @@
       "Id": 2004,
       "Stage": 3,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         1,
@@ -65,6 +69,39 @@
       "Id": 2069,
       "Stage": 3,
       "IsJade": true,
+      "IsWave3": false,
+      "IsExternal": false,
+      "EyePos": [
+        1,
+        32
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "TROPICAL KID",
+      "Id": 2091,
+      "Stage": 3,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        1,
+        32
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "FROZEN KID",
+      "Id": 2113,
+      "Stage": 3,
+      "IsJade": false,
+      "IsWave3": true,
       "IsExternal": false,
       "EyePos": [
         1,
@@ -80,6 +117,7 @@
       "Id": 3005,
       "Stage": 4,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -95,6 +133,7 @@
       "Id": 3006,
       "Stage": 4,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -110,6 +149,7 @@
       "Id": 3007,
       "Stage": 4,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -1,
@@ -125,6 +165,7 @@
       "Id": 3008,
       "Stage": 4,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -140,6 +181,7 @@
       "Id": 3009,
       "Stage": 4,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -3,
@@ -155,6 +197,7 @@
       "Id": 3010,
       "Stage": 4,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -3,
@@ -170,6 +213,7 @@
       "Id": 3011,
       "Stage": 4,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -3,
@@ -185,6 +229,7 @@
       "Id": 3012,
       "Stage": 4,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -200,6 +245,7 @@
       "Id": 3013,
       "Stage": 4,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -215,6 +261,7 @@
       "Id": 3014,
       "Stage": 4,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -230,6 +277,7 @@
       "Id": 3015,
       "Stage": 4,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -1,
@@ -245,6 +293,7 @@
       "Id": 3016,
       "Stage": 4,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         1,
@@ -260,6 +309,7 @@
       "Id": 3070,
       "Stage": 4,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -275,6 +325,7 @@
       "Id": 3071,
       "Stage": 4,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -290,6 +341,7 @@
       "Id": 3072,
       "Stage": 4,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -305,6 +357,7 @@
       "Id": 3073,
       "Stage": 4,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -316,10 +369,139 @@
       ]
     },
     {
+      "Name": "TROPICAL ROAR YOUNG",
+      "Id": 3092,
+      "Stage": 4,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        17
+      ],
+      "MouthPos": [
+        0,
+        16
+      ]
+    },
+    {
+      "Name": "TROPICAL TODDLE YOUNG",
+      "Id": 3093,
+      "Stage": 4,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        24
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "TROPICAL LICK YOUNG",
+      "Id": 3094,
+      "Stage": 4,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        -1,
+        18
+      ],
+      "MouthPos": [
+        1,
+        24
+      ]
+    },
+    {
+      "Name": "TROPICAL SPROUT YOUNG",
+      "Id": 3095,
+      "Stage": 4,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        29
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "FROZEN ROAR YOUNG",
+      "Id": 3114,
+      "Stage": 4,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        17
+      ],
+      "MouthPos": [
+        0,
+        16
+      ]
+    },
+    {
+      "Name": "FROZEN TODDLE YOUNG",
+      "Id": 3115,
+      "Stage": 4,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        24
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "FROZEN GLIDE YOUNG",
+      "Id": 3116,
+      "Stage": 4,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        -3,
+        30
+      ],
+      "MouthPos": [
+        -3,
+        32
+      ]
+    },
+    {
+      "Name": "FROZEN FLOAT YOUNG",
+      "Id": 3117,
+      "Stage": 4,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        17
+      ],
+      "MouthPos": [
+        0,
+        19
+      ]
+    },
+    {
       "Name": "BBMARUTCHI",
       "Id": 4017,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -335,6 +517,7 @@
       "Id": 4018,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -350,6 +533,7 @@
       "Id": 4019,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -1,
@@ -365,6 +549,7 @@
       "Id": 4020,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         1,
@@ -380,6 +565,7 @@
       "Id": 4021,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -395,6 +581,7 @@
       "Id": 4022,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -410,6 +597,7 @@
       "Id": 4023,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -425,6 +613,7 @@
       "Id": 4024,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         1,
@@ -440,6 +629,7 @@
       "Id": 4025,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -455,6 +645,7 @@
       "Id": 4026,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -3,
@@ -470,6 +661,7 @@
       "Id": 4027,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -5,
@@ -485,6 +677,7 @@
       "Id": 4028,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -500,6 +693,7 @@
       "Id": 4029,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -515,6 +709,7 @@
       "Id": 4030,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -530,6 +725,7 @@
       "Id": 4031,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         1,
@@ -545,6 +741,7 @@
       "Id": 4032,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -560,6 +757,7 @@
       "Id": 4033,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -575,6 +773,7 @@
       "Id": 4034,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -590,6 +789,7 @@
       "Id": 4035,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -605,6 +805,7 @@
       "Id": 4036,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         1,
@@ -620,6 +821,7 @@
       "Id": 4037,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         1,
@@ -635,6 +837,7 @@
       "Id": 4038,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -650,6 +853,7 @@
       "Id": 4039,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -5,
@@ -665,6 +869,7 @@
       "Id": 4040,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -680,6 +885,7 @@
       "Id": 4041,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -2,
@@ -695,6 +901,7 @@
       "Id": 4042,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -710,6 +917,7 @@
       "Id": 4043,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -725,6 +933,7 @@
       "Id": 4044,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -740,6 +949,7 @@
       "Id": 4045,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -755,6 +965,7 @@
       "Id": 4046,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -770,6 +981,7 @@
       "Id": 4047,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -785,6 +997,7 @@
       "Id": 4048,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -800,6 +1013,7 @@
       "Id": 4049,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -815,6 +1029,7 @@
       "Id": 4050,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -830,6 +1045,7 @@
       "Id": 4051,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -845,6 +1061,7 @@
       "Id": 4052,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -860,6 +1077,7 @@
       "Id": 4053,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -875,6 +1093,7 @@
       "Id": 4054,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -890,6 +1109,7 @@
       "Id": 4055,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -905,6 +1125,7 @@
       "Id": 4056,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -1,
@@ -920,6 +1141,7 @@
       "Id": 4057,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -935,6 +1157,7 @@
       "Id": 4058,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -950,6 +1173,7 @@
       "Id": 4059,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -965,6 +1189,7 @@
       "Id": 4060,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -980,6 +1205,7 @@
       "Id": 4061,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -995,6 +1221,7 @@
       "Id": 4062,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1010,6 +1237,7 @@
       "Id": 4063,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -9,
@@ -1025,6 +1253,7 @@
       "Id": 4064,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1040,6 +1269,7 @@
       "Id": 4065,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1055,6 +1285,7 @@
       "Id": 4066,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -1,
@@ -1070,6 +1301,7 @@
       "Id": 4067,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -1,
@@ -1085,6 +1317,7 @@
       "Id": 4068,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -1,
@@ -1100,6 +1333,7 @@
       "Id": 4074,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1115,6 +1349,7 @@
       "Id": 4075,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -3,
@@ -1130,6 +1365,7 @@
       "Id": 4076,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1145,6 +1381,7 @@
       "Id": 4077,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         -4,
@@ -1160,6 +1397,7 @@
       "Id": 4078,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1175,6 +1413,7 @@
       "Id": 4079,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1190,6 +1429,7 @@
       "Id": 4080,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1205,6 +1445,7 @@
       "Id": 4081,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1220,6 +1461,7 @@
       "Id": 4082,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1235,6 +1477,7 @@
       "Id": 4083,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1250,6 +1493,7 @@
       "Id": 4084,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1265,6 +1509,7 @@
       "Id": 4085,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1280,6 +1525,7 @@
       "Id": 4086,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         1,
@@ -1295,6 +1541,7 @@
       "Id": 4087,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         1,
@@ -1310,6 +1557,7 @@
       "Id": 4088,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1325,6 +1573,7 @@
       "Id": 4089,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1340,6 +1589,7 @@
       "Id": 4090,
       "Stage": 5,
       "IsJade": true,
+      "IsWave3": false,
       "IsExternal": false,
       "EyePos": [
         0,
@@ -1351,10 +1601,587 @@
       ]
     },
     {
-      "Name": "MEERTCHI",
-      "Id": 60100,
+      "Name": "TROPICAL MEOWTCHI",
+      "Id": 4096,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        20
+      ],
+      "MouthPos": [
+        0,
+        20
+      ]
+    },
+    {
+      "Name": "MADILLOTCHI",
+      "Id": 4097,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        14
+      ],
+      "MouthPos": [
+        -1,
+        17
+      ]
+    },
+    {
+      "Name": "TARANTYTCHI",
+      "Id": 4098,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        24
+      ],
+      "MouthPos": [
+        0,
+        32
+      ]
+    },
+    {
+      "Name": "CROCOTCHI",
+      "Id": 4099,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        14
+      ],
+      "MouthPos": [
+        0,
+        24
+      ]
+    },
+    {
+      "Name": "TROPICAL MAMETCHI",
+      "Id": 4100,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        20
+      ],
+      "MouthPos": [
+        0,
+        20
+      ]
+    },
+    {
+      "Name": "PAROROTCHI",
+      "Id": 4101,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        -1,
+        11
+      ],
+      "MouthPos": [
+        0,
+        13
+      ]
+    },
+    {
+      "Name": "TENATCHI",
+      "Id": 4102,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        9
+      ],
+      "MouthPos": [
+        0,
+        9
+      ]
+    },
+    {
+      "Name": "NAMAKEMOTCHI",
+      "Id": 4103,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        19
+      ],
+      "MouthPos": [
+        0,
+        22
+      ]
+    },
+    {
+      "Name": "KUIKUITCHI",
+      "Id": 4104,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        12
+      ],
+      "MouthPos": [
+        0,
+        13
+      ]
+    },
+    {
+      "Name": "POIZUTCHI",
+      "Id": 4105,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        14
+      ],
+      "MouthPos": [
+        0,
+        16
+      ]
+    },
+    {
+      "Name": "CHAMELEOTCHI",
+      "Id": 4106,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        -6,
+        17
+      ],
+      "MouthPos": [
+        0,
+        26
+      ]
+    },
+    {
+      "Name": "IGUANATCHI",
+      "Id": 4107,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        15
+      ],
+      "MouthPos": [
+        0,
+        21
+      ]
+    },
+    {
+      "Name": "YASHIKITCHI",
+      "Id": 4108,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        25
+      ],
+      "MouthPos": [
+        0,
+        30
+      ]
+    },
+    {
+      "Name": "TROPICAL POTSUNENTCHI",
+      "Id": 4109,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        27
+      ],
+      "MouthPos": [
+        0,
+        28
+      ]
+    },
+    {
+      "Name": "ANANATCHI",
+      "Id": 4110,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        18
+      ],
+      "MouthPos": [
+        0,
+        24
+      ]
+    },
+    {
+      "Name": "AVOVOTCHI",
+      "Id": 4111,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        17
+      ],
+      "MouthPos": [
+        0,
+        24
+      ]
+    },
+    {
+      "Name": "MANAPATCHI",
+      "Id": 4112,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        10
+      ],
+      "MouthPos": [
+        0,
+        18
+      ]
+    },
+    {
+      "Name": "WOLFTCHI",
+      "Id": 4118,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        -2,
+        13
+      ],
+      "MouthPos": [
+        0,
+        19
+      ]
+    },
+    {
+      "Name": "OKOJOTCHI",
+      "Id": 4119,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        1,
+        9
+      ],
+      "MouthPos": [
+        0,
+        10
+      ]
+    },
+    {
+      "Name": "POLAKUMATCHI",
+      "Id": 4120,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        6
+      ],
+      "MouthPos": [
+        0,
+        8
+      ]
+    },
+    {
+      "Name": "AZARATCHI",
+      "Id": 4121,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        11
+      ],
+      "MouthPos": [
+        0,
+        17
+      ]
+    },
+    {
+      "Name": "ICY IRUKATCHI",
+      "Id": 4122,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        13
+      ],
+      "MouthPos": [
+        0,
+        14
+      ]
+    },
+    {
+      "Name": "GINJIROTCHI",
+      "Id": 4123,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        12
+      ],
+      "MouthPos": [
+        0,
+        13
+      ]
+    },
+    {
+      "Name": "HOPPENTCHI",
+      "Id": 4124,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        9
+      ],
+      "MouthPos": [
+        0,
+        16
+      ]
+    },
+    {
+      "Name": "RAKKOTCHI",
+      "Id": 4125,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        15
+      ],
+      "MouthPos": [
+        0,
+        19
+      ]
+    },
+    {
+      "Name": "MOOSETCHI",
+      "Id": 4126,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        7
+      ],
+      "MouthPos": [
+        0,
+        16
+      ]
+    },
+    {
+      "Name": "LEMMINGTCHI",
+      "Id": 4127,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        20
+      ],
+      "MouthPos": [
+        0,
+        24
+      ]
+    },
+    {
+      "Name": "RAICHOTCHI",
+      "Id": 4128,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        3
+      ],
+      "MouthPos": [
+        0,
+        5
+      ]
+    },
+    {
+      "Name": "YUKIUSATCHI",
+      "Id": 4129,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        18
+      ],
+      "MouthPos": [
+        0,
+        23
+      ]
+    },
+    {
+      "Name": "NERINETCHI",
+      "Id": 4130,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        15
+      ],
+      "MouthPos": [
+        0,
+        17
+      ]
+    },
+    {
+      "Name": "DANGOUOTCHI",
+      "Id": 4131,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        -3,
+        26
+      ],
+      "MouthPos": [
+        0,
+        26
+      ]
+    },
+    {
+      "Name": "YAYTYTCHI",
+      "Id": 4132,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        25
+      ],
+      "MouthPos": [
+        0,
+        31
+      ]
+    },
+    {
+      "Name": "YUKIRARATCHI",
+      "Id": 4133,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        0,
+        19
+      ],
+      "MouthPos": [
+        0,
+        28
+      ]
+    },
+    {
+      "Name": "HOBOHORNTCHI",
+      "Id": 4134,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": true,
+      "IsExternal": false,
+      "EyePos": [
+        -3,
+        13
+      ],
+      "MouthPos": [
+        0,
+        18
+      ]
+    },
+    {
+      "Name": "OMARUTCHI",
+      "Id": 4800,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": false,
+      "IsExternal": true,
+      "EyePos": [
+        -5,
+        19
+      ],
+      "MouthPos": [
+        -5,
+        19
+      ]
+    },
+    {
+      "Name": "POOPTCHI",
+      "Id": 4801,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": false,
+      "IsExternal": true,
+      "EyePos": [
+        0,
+        18
+      ],
+      "MouthPos": [
+        0,
+        19
+      ]
+    },
+    {
+      "Name": "MEERTCHI",
+      "Id": 4802,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": false,
       "IsExternal": true,
       "EyePos": [
         -3,
@@ -1367,9 +2194,10 @@
     },
     {
       "Name": "SHYONTCHI",
-      "Id": 60101,
+      "Id": 4803,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": true,
       "EyePos": [
         -3,
@@ -1381,33 +2209,35 @@
       ]
     },
     {
-      "Name": "POOPTCHI",
-      "Id": 60102,
+      "Name": "KOALABUTCHI",
+      "Id": 4804,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": true,
       "EyePos": [
-        0,
-        18
+        -1,
+        19
       ],
       "MouthPos": [
         0,
-        19
+        17
       ]
     },
     {
-      "Name": "OMARUTCHI",
-      "Id": 60103,
+      "Name": "PLATYPUTCHI",
+      "Id": 4805,
       "Stage": 5,
       "IsJade": false,
+      "IsWave3": false,
       "IsExternal": true,
       "EyePos": [
-        -5,
-        19
+        -2,
+        8
       ],
       "MouthPos": [
-        -5,
-        19
+        0,
+        16
       ]
     }
   ],
