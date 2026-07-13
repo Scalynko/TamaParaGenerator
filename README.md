@@ -16,16 +16,15 @@ needing to randomize or go through all of them.
 A running history of your generated characters is available in the history
 section.
 
-You can customize the set of characters that appear in the lists.
+You can customize the set of characters that appear in the lists:
 
-**Include non-breedable eyes** will include eyes of non-adult characters in the eyes list.
-**Include Jade Forest-exclusive characters** will include characters only
+- **Include non-breedable eyes** will include eyes of non-adult characters in the eyes list.
+- **Include Jade Forest-exclusive characters** will include characters only
 available on Jade Forest in the lists.
-**Include Orange Tropics and White Glacier characters** will include characters only available
-on Orange Tropics and White Glacier in the lists.
-**Include Lab Tama eyes** will include the eyes of the characters
+- **Include Orange Tropics and White Glacier characters** will include characters only available on Orange Tropics and White Glacier in the lists.
+- **Include Lab Tama eyes** will include the eyes of the characters
 that you can breed with on Lab Tamas.
-**Include Lab Tama bodies** will include the bodies of the Lab Tama
+- **Include Lab Tama bodies** will include the bodies of the Lab Tama
 characters.
 
 
@@ -54,7 +53,7 @@ properties:
   to the data generator.
 - `Stage`: character's stage; `5` is adult, any under that is not breedable
 - `IsJade`: is character Jade Forest-exclusive
-- `IsWave3`: is character exclusive in Orange Tropics and White Glacier
+- `IsWave3`: is character Orange Tropics-exclusive and White Glacier-exclusive
 - `IsExternal`: is character from Lab Tama
 - `EyePos`: an array of two elements, X and Y position of eye sprite relative to
   top left of body sprite. All eye sprites should have the same dimensions.
