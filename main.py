@@ -36,12 +36,15 @@ with st.container(border=True):
 
 randomize_all_slot = st.empty()
 
-with st.container(border=True, horizontal=True):
-    opt_include_non_breedable = st.checkbox('Include non-breedable eyes')
-    opt_include_jade_charas = st.checkbox('Include Jade Forest-exclusive characters', True)
-    opt_include_wave3_charas = st.checkbox('Include Orange Tropics and White Glacier characters', True)
-    opt_include_external_eyes = st.checkbox('Include Lab Tama eyes', True)
-    opt_include_external_bodies = st.checkbox('Include Lab Tama bodies')
+with st.container(border=True):
+    with st.container(horizontal=True):
+        opt_include_jade_charas = st.checkbox('Include Jade Forest characters', True)
+        opt_include_wave3_charas = st.checkbox('Include Orange Tropics and White Glacier characters', True)
+    with st.container(horizontal=True):
+        opt_include_external_eyes = st.checkbox('Include Lab Tama eyes', True)
+        opt_include_external_bodies = st.checkbox('Include Lab Tama bodies')
+    with st.container(horizontal=True):
+        opt_include_non_breedable = st.checkbox('Include non-breedable eyes')
 
 with st.container(border=True):
     col_image_big, col_image_small = st.columns(2, vertical_alignment='center')
