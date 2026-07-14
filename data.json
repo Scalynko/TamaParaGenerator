@@ -2239,6 +2239,38 @@
         0,
         16
       ]
+    },
+    {
+      "Name": "SHYKUTCHI",
+      "Id": 4806,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": false,
+      "IsExternal": true,
+      "EyePos": [
+        0,
+        12
+      ],
+      "MouthPos": [
+        0,
+        16
+      ]
+    },
+    {
+      "Name": "GORIMATCHI",
+      "Id": 4807,
+      "Stage": 5,
+      "IsJade": false,
+      "IsWave3": false,
+      "IsExternal": true,
+      "EyePos": [
+        0,
+        17
+      ],
+      "MouthPos": [
+        0,
+        20
+      ]
     }
   ],
   "Palettes": [
