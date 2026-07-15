@@ -18,14 +18,15 @@ section.
 
 You can customize the set of characters that appear in the lists:
 
-- **Include non-breedable eyes** will include eyes of non-adult characters in the eyes list.
-- **Include Jade Forest-exclusive characters** will include characters only
+- **Include Land, Water, and Sky characters** will include characters available on Land, Water, and Sky.
+- **Include Forest characters** will include characters only
 available on Jade Forest in the lists.
-- **Include Orange Tropics and White Glacier characters** will include characters only available on Orange Tropics and White Glacier in the lists.
+- **Include Tropical and Ice characters** will include characters only available on Orange Tropics and White Glacier in the lists.
 - **Include Lab Tama eyes** will include the eyes of the characters
 that you can breed with on Lab Tamas.
 - **Include Lab Tama bodies** will include the bodies of the Lab Tama
 characters.
+- **Include non-breedable eyes** will include eyes of non-adult characters in the eyes list.
 
 
 You may have to remake your selections after changing the settings.
@@ -52,6 +53,7 @@ properties:
   real ID, so they start at `60100` and is sequential based on order specified
   to the data generator.
 - `Stage`: character's stage; `5` is adult, any under that is not breedable
+- `IsWave1`: is character in the Land, Water, and Sky areas
 - `IsJade`: is character Jade Forest-exclusive
 - `IsWave3`: is character Orange Tropics-exclusive and White Glacier-exclusive
 - `IsExternal`: is character from Lab Tama
