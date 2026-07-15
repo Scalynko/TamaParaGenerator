@@ -14,8 +14,6 @@ st.set_page_config(page_title="Tamagotchi Paradise Genes Generator")
 
 st.title('Tamagotchi Paradise Genes Generator')
 
-st.header('Generate')
-
 with st.container(border=True):
     col_body_select, col_eyes_select = st.columns(2)
     with col_body_select:
@@ -38,8 +36,10 @@ randomize_all_slot = st.empty()
 
 with st.container(border=True):
     with st.container(horizontal=True):
-        opt_include_jade_charas = st.checkbox('Include Jade Forest characters', True)
-        opt_include_wave3_charas = st.checkbox('Include Orange Tropics and White Glacier characters', True)
+        opt_include_wave1_charas = st.checkbox('Include Land, Water and Sky characters', True)
+        opt_include_jade_charas = st.checkbox('Include Forest characters', True)
+        opt_include_wave3_charas = st.checkbox('Include Tropical and Ice characters', True)
+    st.divider()
     with st.container(horizontal=True):
         opt_include_external_eyes = st.checkbox('Include Lab Tama eyes', True)
         opt_include_external_bodies = st.checkbox('Include Lab Tama bodies')
@@ -47,6 +47,7 @@ with st.container(border=True):
         opt_include_non_breedable = st.checkbox('Include non-breedable eyes')
 
 with st.container(border=True):
+    no_tama_found_error = st.empty()
     col_image_big, col_image_small = st.columns(2, vertical_alignment='center')
     with col_image_big:
         with st.container(horizontal_alignment='center'):
@@ -59,7 +60,6 @@ st.header('History')
 
 history_container = st.container(horizontal=True)
 
-
 # Logic
 
 if 'history' not in st.session_state:
@@ -68,6 +68,10 @@ if 'history' not in st.session_state:
 # Filter characters
 
 def chara_filter(chara):
+    if not opt_include_wave1_charas:
+        if chara['IsWave1']:
+            return False
+            
     if not opt_include_jade_charas:
         if chara['IsJade']:
             return False
@@ -99,21 +103,35 @@ charas_list = list(filter(chara_filter, data['Characters']))
 bodies_list = list(filter(body_filter, charas_list))
 eyes_list = list(filter(eyes_filter, charas_list))
 
+
 # Render buttons and selectboxes
 
 if body_select_button_slot.button('🎲', 'random_body', use_container_width=True):
-    st.session_state['body'] = random.choice(bodies_list)
+    try:
+        st.session_state['body'] = random.choice(bodies_list)
+    except IndexError:
+        pass
 
 if eyes_select_button_slot.button('🎲', 'random_eyes', use_container_width=True):
-    st.session_state['eyes'] = random.choice(eyes_list)
+    try:
+        st.session_state['eyes'] = random.choice(eyes_list)
+    except IndexError:
+        pass
 
 if color_select_button_slot.button('🎲', 'random_color', use_container_width=True):
-    st.session_state['color'] = random.choice(data['Palettes'])
+    try:
+        st.session_state['color'] = random.choice(data['Palettes'])
+    except IndexError:
+        pass
+
 
 if randomize_all_slot.button('🎲 All', 'random_all', use_container_width=True):
-    st.session_state['body'] = random.choice(bodies_list)
-    st.session_state['eyes'] = random.choice(eyes_list)
-    st.session_state['color'] = random.choice(data['Palettes'])
+    try:
+        st.session_state['body'] = random.choice(bodies_list)
+        st.session_state['eyes'] = random.choice(eyes_list)
+        st.session_state['color'] = random.choice(data['Palettes'])
+    except IndexError:
+        pass
 
 def selectbox_formatter(data):
     if data:
@@ -124,8 +142,14 @@ def selectbox_formatter(data):
 selected_body = body_select_slot.selectbox('Body', bodies_list, key='body', format_func=selectbox_formatter)
 selected_eyes = eyes_select_slot.selectbox('Eyes', eyes_list, key='eyes', format_func=selectbox_formatter)
 selected_color = color_select_slot.selectbox('Color', data['Palettes'], key='color', format_func=selectbox_formatter)
-key = f'{selected_body['Id']}_{selected_eyes['Id']}_{selected_color['Name']}'
 
+# When a box is empty because all the options got deselected 
+try:
+    key = f'{selected_body['Id']}_{selected_eyes['Id']}_{selected_color['Name']}'
+except TypeError:
+    no_tama_found_error.warning("Please re-enable some of the checkboxes and make sure a character is selected in each box.")
+    st.stop()
+ 
 # Generate image
 def generate_image(body, eyes, color):
     with Image.open(os.path.join('images', f'{body['Id']}_body.png')) as body_image, \
